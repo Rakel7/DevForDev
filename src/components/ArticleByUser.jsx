@@ -5,10 +5,18 @@ import Header from '../pages/Header';
 const ArticleByUser = () => {
     const [articlesByUser, setArticlesByUser] = useState([])
 
+    const apiKey = "rDuUZY8g9RiqzW6v2Gd2fecb";
     useEffect(() => {
-        axios.get(' https://dev.to/api/articles/1173347', {})
-            .then((res) => setArticlesByUser(res.data))
+        axios.get("https://dev.to/api/articles/me" , {
+            headers: {
+                        "Content-Type": "application/json",
+                        "api-key": "rDuUZY8g9RiqzW6v2Gd2fecb",
+                    },
+        }).then((res) => setArticlesByUser(res.data))
+        .catch((err) => console.log(err));
     }, [])
+
+
 
     return (
         <div>

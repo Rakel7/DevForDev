@@ -47,7 +47,7 @@ const RightNav = ({open}) => {
                 <Link to="/articleByUser">Liste</Link>
                 </li>
                 <li >
-                    Création
+                    <Link to="/creation">Création</Link>
                 </li>
             </Ul>
 
