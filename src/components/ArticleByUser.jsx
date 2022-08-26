@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Header from '../pages/Header';
+import Header from './Header';
 
 const ArticleByUser = () => {
     const [articlesByUser, setArticlesByUser] = useState([])

@@ -1,7 +1,7 @@
 import React from 'react';
 import "../index.css";
 import Editor from "../components/Editor";
-import Header from './Header';
+import Header from '../components/Header';
 
 const Creation = () => {
     return (

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ArticlesList from '../components/ArticlesList';
-import Header from './Header';
+import Header from '../components/Header';
 
 const Home = () => {
     const [articles, setArticles] = useState([])
