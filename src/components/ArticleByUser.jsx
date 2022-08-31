@@ -5,22 +5,22 @@ import Header from './Header';
 const ArticleByUser = () => {
     const [articlesByUser, setArticlesByUser] = useState([])
 
-    const apiKey = "rDuUZY8g9RiqzW6v2Gd2fecb";
     useEffect(() => {
-        axios.get("https://dev.to/api/articles/me" , {
+        axios.get("https://dev.to/api/articles/me", {
             headers: {
-                        "Content-Type": "application/json",
-                        "api-key": "rDuUZY8g9RiqzW6v2Gd2fecb",
-                    },
+                "Access-Control-Allow-Headers": ["Api-Key"],
+                "Accept": "application/json",
+                "Content-Type": "application/vnd.forem.api-v1+json",
+                "Api-Key": "rDuUZY8g9RiqzW6v2Gd2fecb",
+            },
         }).then((res) => setArticlesByUser(res.data))
-        .catch((err) => console.log(err));
+            .catch((err) => console.log(err));
     }, [])
-
-
 
     return (
         <div>
             <Header />
+            {console.log(articlesByUser)}
             {articlesByUser.title}
             {articlesByUser.description}
             <h1>HELLO</h1>

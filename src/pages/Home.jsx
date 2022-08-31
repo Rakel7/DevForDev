@@ -44,6 +44,7 @@ const Home = () => {
     return (
         <div>
             <Header />
+            <h1>Bienvenue sur DevforDev</h1>
             <ArticlesList
             articles={articles}
             />

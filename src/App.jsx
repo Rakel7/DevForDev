@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ArticleByUser from './components/ArticleByUser';
 import Creation from './pages/Creation';
+import Remerciement from './pages/Remerciement';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/articlebyuser" element={<ArticleByUser />} />
         <Route path="/creation" element={<Creation />} />
+        <Route path="/remerciement" element={<Remerciement />} />
       </Routes>
     </BrowserRouter>
     </div>
