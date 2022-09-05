@@ -29,7 +29,11 @@ const Ul = styled.ul `
 
         li{
             color:#fff;
-            font-size: 20px;
+            font-size: 20px;  
+        }
+
+        a{
+            color:#fff;
         }
 
     }

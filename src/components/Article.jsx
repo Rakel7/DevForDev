@@ -16,7 +16,7 @@ const Article = ({ article }) => {
                     <a href={article.url}><h3 style={{ color: "black" }}>{article.description}</h3></a>
                     <div style={{ display: "flex", justifyContent: "space-around"}}>
                     {article.tag_list.map((tag) => (
-                    <p># {tag} </p>
+                    <p>#{tag} </p>
                     ))} 
                     </div>
                 </div>
